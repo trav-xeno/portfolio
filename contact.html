@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Travis Nevins Portfolio</title>
+    <link rel="shrotcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assests/csss/mainstyle.css" />
+    <script src="./assests/JS/form.js"></script>
+  </head>
+  <header>
+    <div class="container">
+      <!-- <section class="content"> -->
+      <h1>Travis Nevins</h1>
+      <nav class="margin">
+        <a class="links" href="./index.html">
+          About
+        </a>
+        <a class="borders" href="./portfolio.html">
+          Portfolio
+        </a>
+        <a href="#">
+          Contact
+        </a>
+      </nav>
+    </div>
+    <!-- </section>-->
+  </header>
+
+  <body>
+    <section class="content margin">
+      <h2 class="margin">Contact</h2>
+      <hr class="margin" />
+      <form>
+        <label for="name">Name</label>
+        <br />
+        <input id="name" type="text" pattern="" placeholder="Name" />
+        <br />
+        <label for="email">Email</label>
+        <br />
+        <input id="email" type="email" placeholder="example@example.com" />
+        <br />
+        <label for="message">Message</label>
+        <br />
+        <textarea placeholder="message..."></textarea>
+        <br />
+        <button
+          type="submit"
+          onclick="popUp()"
+          id="submit"
+          class="submit margin"
+        >
+          <span>Submit</span>
+        </button>
+      </form>
+    </section>
+  </body>
+  <footer>
+    <p class="text-center">Copyright</p>
+  </footer>
+</html>
