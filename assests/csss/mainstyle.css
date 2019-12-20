@@ -128,9 +128,9 @@ footer {
   border-top: 8px solid #4aaaa5;
   height: 50px;
   width: 100%;
-  position: fixed;
+  /* position: fixed;
   bottom: 0px;
-  left: 0px;
+  left: 0px; */
 }
 hr {
   border-top: 2px solid #ccc;
@@ -205,7 +205,6 @@ textarea {
 .submit {
   text-align: center;
   color: #fff;
-  border-radius: 4px;
   font-size: 20px;
   padding: 15px;
   transition: all 0.5s;
@@ -235,7 +234,7 @@ textarea {
 }
 .content {
   width: 960px;
-  height: auto;
+  min-height: calc(100vh - 70px);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -263,32 +262,76 @@ textarea {
   padding: 10px;
   font-size: 20px;
 }
-
+ul {
+  text-decoration: none;
+  font-size: 20px;
+}
 .item1-about {
   grid-area: img;
   text-align: center;
-  height: 299px;
+  width: 300px;
+  height: 400px;
 }
 
 .item2-about {
   grid-area: p1;
+  line-height: 24px;
 }
 
 .item3-about {
   grid-area: p2;
+  line-height: 24px;
 }
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   grid-gap: 5px;
-  background-color: transparent;
-  padding: 10px;
+  grid-template-areas: "hangman rpg" "trivia widget" "rps .";
 }
 
-.portfolio-container div {
-  background-color: rgba(255, 255, 255, 0.8);
+.items {
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  border: 2px solid #000;
+  height: 200px;
+}
+
+.item-hangman {
+  grid-area: hangman;
+}
+.item-rpg {
+  grid-area: rpg;
+}
+.item-trivia {
+  grid-area: trivia;
+}
+.item-widget {
+  grid-area: widget;
+}
+.item-rps {
+  grid-area: rps;
+}
+
+.porg {
+  background-image: url(../images/porg.jpeg) !important;
+  background-size: cover;
+}
+.babyYoda {
+  background-image: url(../images/byodajpg.jpg) !important;
+  background-size: cover;
+}
+.battlestar {
+  background-image: url(../images/battlestar.webp) !important;
+  background-size: cover;
+}
+.fusion {
+  background-image: url(../images/Fusion-reactor.jpg) !important;
+}
+.firefly {
+  background-image: url(../images/firefly.jpg) !important;
+  background-size: cover;
+}
+.pos {
+  position: relative;
+  top: 60%;
 }
