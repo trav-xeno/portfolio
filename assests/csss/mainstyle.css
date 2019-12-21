@@ -190,7 +190,7 @@ textarea {
   font-size: 30px;
 }
 .content * {
-  /*probably not the best solution */
+  /*probably not the best solution but hey it worked*/
   margin: 15px 15px 15px 15px;
 }
 .grid-container-about {
@@ -198,6 +198,7 @@ textarea {
   grid-gap: 5px;
   background-color: transparent;
   padding: 5px;
+  grid-template-columns: auto auto;
   grid-template-areas: "img p1 " "p2 p2 ";
 }
 
@@ -256,27 +257,32 @@ ul {
 .item-rps {
   grid-area: rps;
 }
-
+/*didnt really need toadd important but had it so i don
+  t over ride it by being dumb */
 .porg {
-  background-image: url(../images/porg.jpeg) !important;
+  background-image: url(../images/porg.jpeg);
   background-size: cover;
 }
 .babyYoda {
-  background-image: url(../images/byodajpg.jpg) !important;
+  background-image: url(../images/byodajpg.jpg);
+
   background-size: cover;
 }
 .battlestar {
-  background-image: url(../images/battlestar.webp) !important;
+  background-image: url(../images/battlestar.webp);
   background-size: cover;
 }
 .fusion {
-  background-image: url(../images/Fusion-reactor.jpg) !important;
+  background-image: url(../images/Fusion-reactor.jpg);
 }
 .firefly {
-  background-image: url(../images/firefly.jpg) !important;
+  background-image: url(../images/firefly.jpg);
   background-size: cover;
 }
 .pos {
   position: relative;
   top: 60%;
+}
+.img-about {
+  background-image: url(../images/profile.JPG);
 }
