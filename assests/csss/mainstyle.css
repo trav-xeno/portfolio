@@ -198,7 +198,7 @@ textarea {
   grid-gap: 5px;
   background-color: transparent;
   padding: 5px;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   grid-template-areas: "img p1 " "p2 p2 ";
 }
 
