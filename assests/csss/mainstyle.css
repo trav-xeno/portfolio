@@ -198,7 +198,7 @@ textarea {
   grid-gap: 5px;
   background-color: transparent;
   padding: 5px;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   grid-template-areas: "img p1 " "p2 p2 ";
 }
 
@@ -285,4 +285,5 @@ ul {
 }
 .img-about {
   background-image: url(../images/profile.JPG);
+  background-size: cover;
 }
